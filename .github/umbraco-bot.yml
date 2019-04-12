@@ -11,7 +11,7 @@ nolabels:
   releaseLabel: release/
 
   # What the bot will reply with when no labels are present
-  missingRelease: Please add a release label WARREN
+  missingRelease: Please add a release label @{{ username }}
 
   # What the bot will reply with when no labels are present
-  missing: You are missing a label. Please add one to this issue before closing WARREN
+  missing: You are missing a label. Please add one to this issue before closing {{ @username }}
