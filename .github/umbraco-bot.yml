@@ -1,8 +1,17 @@
+# Umbraco Bot Settings
+# Aka automate the dull things & lend a hand to Seb :)
+
 # Settings for the no label functionality
 nolabels:
   
   # If this feature is enable or disabled
   enabled: true
 
-  # What the bot will reply with when no label is present OR the release tag is missing
-  message: You have forgotten to add a label for which release this is in.
+  # The label must start with the following for the bot allow the issue to be closed
+  releaseLabel: release/
+
+  # What the bot will reply with when no labels are present
+  missingRelease: Please add a release label WARREN
+
+  # What the bot will reply with when no labels are present
+  missing: You are missing a label. Please add one to this issue before closing WARREN
