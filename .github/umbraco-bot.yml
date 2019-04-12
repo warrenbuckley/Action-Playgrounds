@@ -1,0 +1,8 @@
+# Settings for the no label functionality
+nolabels:
+  
+  # If this feature is enable or disabled
+  enabled: true
+
+  # What the bot will reply with when no label is present OR the release tag is missing
+  message: You have forgotten to add a label for which release this is in.
