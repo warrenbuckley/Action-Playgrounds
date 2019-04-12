@@ -5,7 +5,7 @@
 nolabels:
   
   # If this feature is enable or disabled
-  enabled: true
+  enabled: false
 
   # The label must start with the following for the bot allow the issue to be closed
   releaseLabel: release/
