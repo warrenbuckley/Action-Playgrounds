@@ -32,4 +32,4 @@ upforgrabs:
 
   # What the bot will reply with when the label above is added to an issue
   # The token {{ username }} will be replaced with the username of the person who labelled the issue
-  message: @{{ username }} has marked this as `up-for-grabs` so that you or someone else coming along could create a PR for it
+  message: '@{{ username }} has marked this as `up-for-grabs` so that you or someone else coming along could create a PR for it'
