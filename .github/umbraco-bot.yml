@@ -3,15 +3,33 @@
 
 # Settings for the no label functionality
 nolabels:
-  
-  # If this feature is enable or disabled
+
+  # If this feature is enabled or disabled
   enabled: true
 
-  # The label must start with the following for the bot allow the issue to be closed
+  # The label must start with the following for the bot to allow the issue to be closed
   releaseLabel: release/
 
   # What the bot will reply with when no labels are present
+  # The token {{ username }} will be replaced with the username of the person who closed the issue
   missingRelease: Please add a release label @{{ username }}
 
   # What the bot will reply with when no labels are present
+  # The token {{ username }} will be replaced with the username of the person who closed the issue
   missing: You are missing a label. Please add one to this issue before closing @{{ username }}
+
+  # If the issue contains this label then ignore it & don't send out our friendly reminder
+  ignoreLabel: state/no-action
+
+# Settings for the up for grabs label functionality
+upforgrabs:
+
+  # If this feature is enabled or disabled
+  enabled: true
+  
+  # The label must match this for the bot to reply with the message below, when a label is added to an issue
+  label: up-for-grabs
+
+  # What the bot will reply with when the label above is added to an issue
+  # The token {{ username }} will be replaced with the username of the person who labelled the issue
+  message: @{{ username }} has marked this as `up-for-grabs` so that you or someone else coming along could create a PR for it
